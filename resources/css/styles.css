@@ -1,0 +1,115 @@
+/*
+    By: Tyger Whitaker
+    File Name: styles.css
+*/
+
+/* CSS Reset */
+body, header, nav, main, footer, img, h1, h2, h3, ul, aside, figure, figcaption, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+/* Media Query for Mobile Viewport */
+@media (min-width: 576px) { 
+    
+    .welcome {
+        top: 20%;
+        left: 5%;
+        padding: 2em;
+    }
+	
+	.header-container {
+        top: 20%;
+        left: 5%;
+        padding: 2em;
+    }
+	
+}
+
+/* Media Query for Tablet Viewport */
+@media (min-width: 768px) { 
+    
+    .welcome {
+        top: 20%;
+        left: 5%;
+        padding: 2em;
+    }
+	
+	.header-container {
+        top: 20%;
+        left: 5%;
+        padding: 2em;
+    }
+
+}
+
+/* Media Query for Desktop Viewport */
+@media (min-width: 992px) { 
+    
+    .display-1 {
+        font-size: 8em;
+    }
+	
+}
+
+
+.hero {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),url(../images/room-bg.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.welcome {
+    position: absolute;
+	top: 40%;
+}
+
+.header-container {
+	text-align: left;
+}
+
+.display-1 {
+  font-size: 4em;
+}
+
+.display-4 {
+  font-size: 4em;
+}
+
+.main-bg {
+	background-color: #000000;
+}
+
+.navbar-bg {
+	background-color: #2b2b2b;
+}
+
+.footer-bg {
+	background-color: #2b2b2b;
+}
+
+.light-text {
+	color: #e4e4e4;
+}
+
+nav .navbar-brand {
+	font-family: 'Comfortaa', cursive;
+}
+
+header h1, h2 {
+	font-family: 'Comfortaa', cursive;
+}
+
+.row h1 {
+	font-family: 'Comfortaa', cursive;
+}
+
+.nav-item {
+	font-family: 'Comfortaa', cursive;
+}
+
+header .btn {
+	font-family: 'Comfortaa', cursive;
+}
