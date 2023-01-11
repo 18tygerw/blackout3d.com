@@ -118,7 +118,7 @@ header .btn {
 div#auction-nudge-items table.columns th,
 div#auction-nudge-items table.columns td,			
 div#auction-nudge-items table.columns td a {
-	color: #fff;
+	color: #e4e4e4;
 }
 /* Add a white border between rows */
 div#auction-nudge-items table.columns td {
@@ -126,9 +126,9 @@ div#auction-nudge-items table.columns td {
 }
 /* All rows */
 div#auction-nudge-items table.columns tr {
-	background-color: #7ccdf8;
+	background-color: #2b2b2b;
 }
 /* Every other row */			
 div#auction-nudge-items table.columns tr.alt {
-	background-color: #2b2b2b;
+	background-color: #393939;
 }
