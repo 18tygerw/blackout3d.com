@@ -143,9 +143,9 @@ div#auction-nudge-items div.an-search-box {
 }
 /* Change the background color and text color of search button */
 div#auction-nudge-items div.an-search-submit {
-	background-color: #393939;
+	background-color: #999999;
 	color: #e4e4e4;
-	border-radius: 8px;
+	border-radius: 6px;
 }	
 
 /* Pagination customization for Auction Nudge */
