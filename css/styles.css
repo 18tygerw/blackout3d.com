@@ -113,3 +113,22 @@ header h1, h2 {
 header .btn {
 	font-family: 'Comfortaa', cursive;
 }
+
+/* Text colour of headings, cells and links */
+div#auction-nudge-items table.columns th,
+div#auction-nudge-items table.columns td,			
+div#auction-nudge-items table.columns td a {
+	color: #fff;
+}
+/* Add a white border between rows */
+div#auction-nudge-items table.columns td {
+  border-top: 1px solid #fff;			
+}
+/* All rows */
+div#auction-nudge-items table.columns tr {
+	background-color: #7ccdf8;
+}
+/* Every other row */			
+div#auction-nudge-items table.columns tr.alt {
+	background-color: #2b2b2b;
+}
