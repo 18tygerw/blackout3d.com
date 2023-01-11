@@ -122,7 +122,7 @@ div#auction-nudge-items table.columns td a {
 }
 /* Add a white border between rows */
 div#auction-nudge-items table.columns td {
-  border-top: 1px solid #fff;			
+  border-top: 1px solid #999999;			
 }
 /* All rows */
 div#auction-nudge-items table.columns tr {
