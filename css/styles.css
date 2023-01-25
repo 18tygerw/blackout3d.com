@@ -55,7 +55,7 @@ body, header, nav, main, footer, img, h1, h2, h3, ul, aside, figure, figcaption,
 
 
 .hero {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),url(../images/room-bg.gif);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)),url(../images/main-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
