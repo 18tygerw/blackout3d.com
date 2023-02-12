@@ -61,60 +61,46 @@
 				<h1 class="display-4 font-weight-bolder">Contact us!</h1>
 				<p class="lead">
 				Want to contact us?
-				Send a message to our business email.
+				Send a message to our business emails.
 				</p>
-				<form method="get" action="FormProcessor.html">
-					<div class="col-auto form-group">
-							<label for="inputEmail">Email</label>
-							<input type="email" class="form-control" id="inputEmail" name="email" placeholder="Email">
+				
+				<!-- Email Form -->
+				<form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSevMXwGrK8JnDrWP7EcDSNqlLTJHsiNBsiXYLVcP8JaqmkazQ/formResponse?usp=pp_url&entry.1491896720=ExampleName&entry.1402572304=ExampleEmail&entry.2017064648=ExampleMessage" target="hidden_iframe" onsubmit="submitted=true;">
+					<div class="mb-4 row">
+						<div class="col">
+							<label>Name</label>
+							<input type="text" name="entry.1491896720" id="entry.1491896720" maxlength="50" class="form-control" placeholder="Name" required>
+						</div>
+						<div class="col">
+							<label for="form_email">Email</label>
+							<input type="text" name="entry.1402572304" id="entry.1402572304" maxlength="50" class="form-control" placeholder="example@email.com" required>
+						</div>
 					</div>
-				  <div class="col-auto mb-3 form-group">
-					<label for="formMessage">Message</label>
-					<textarea class="form-control" id="formMessage" rows="3" name="message" placeholder="Send a message to BlackOut3D"></textarea>
-				  </div>
-				  <div class="col-auto">
-					<button type="submit" class="btn btn-primary mb-3">Submit</button>
-				  </div>
+				    <div class="mb-4">
+						<label for="form_message">Message</label>
+						<textarea id="entry.2017064648" name="entry.2017064648" class="form-control" rows="3" placeholder="Send a message to BlackOut3D" required></textarea>
+				    </div>
+					<button type="submit" value="Submit" class="btn btn-primary mb-3">Submit</button>
 				</form>
-				<h2 class="display-5 font-weight-bolder">Social Media</h1>
+				
+				<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe> <!-- Hides final link -->
 		    </div>
+			<script src="assets/js/jquery.min.js"></script>
+			<script type="text/javascript">var submitted=false;</script>
+			<script type="text/javascript">
+			$('#gform').on('submit', function(e) {
+			  $('#gform *').fadeOut(2000);
+			  $('#gform').prepend('Your submission has been processed...');
+			  });
+</script>
 		</header>
 
-		<!-- Main Content Area -->
-		<main class="container-fluid my-5 main-bg light-text">
-		    <div class="row">
-				<div class="col-sm-4 pb-5">
-					<h1 class="text-center">Twitter</h1>
-					<figure>
-						<a href="https://twitter.com" target="_blank"><img src="images/twitter-large-icon.png" alt="Twitter logo" class="img-fluid rounded mx-auto d-block"></a>
-					</figure>
-				</div>
-	 
-				<div class="col-sm-4 pb-5">
-					<h1 class="text-center">Facebook</h1>
-					<figure>
-						<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-large-icon.png" alt="Facebook logo" class="img-fluid rounded mx-auto d-block"></a>
-					</figure>
-				</div>
-				
-				<div class="col-sm-4 pb-5">
-					<h1 class="text-center">Discord</h1>
-					<figure>
-						<a href="https://discord.com" target="_blank"><img src="images/discord-large-icon.png" alt="Discord logo" class="img-fluid rounded mx-auto d-block"></a>
-					</figure>
-				</div>
-			</div>
-		</main>
-
 		<!-- Footer -->
-		<footer class="text-center p-5 jumbotron-fluid footer-bg">
+		<!-- <footer class="text-center p-5 jumbotron-fluid footer-bg">
 		    <div class="container text-white">
-				<p><a href="mailto:tyger_whitaker@mail.tmcc.edu" class="text-white">template mail</a></p>
-				<a href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.png" alt="white Facebook logo" class="pr-4"></a> 
-				<a href="https://twitter.com" target="_blank"><img src="images/twitter-logo.png" alt="white Twitter logo" class="pr-4"></a>
-				<a href="https://discord.com" target="_blank"><img src="images/discord-logo.png" alt="white Discord logo"></a>
+				<p><a href="mailto:tygerwhitaker@gmail.com" class="text-white">template mail</a></p>
 		    </div>
-		</footer>
+		</footer> -->
 
 		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
