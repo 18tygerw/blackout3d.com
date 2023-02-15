@@ -10,8 +10,10 @@ body, header, nav, main, footer, img, h1, h2, h3, ul, aside, figure, figcaption,
 	border: 0;
 }
 
+
 /* Media Query for Mobile Viewport */
-@media (min-width: 576px) { 
+@media (max-width: 640px) { 
+	
     
     .welcome {
         top: 20%;
@@ -25,11 +27,19 @@ body, header, nav, main, footer, img, h1, h2, h3, ul, aside, figure, figcaption,
         padding: 2em;
     }
 	
+	#carouselBlackOutBanner {
+		margin-top: -58.59px;
+	}
+	
+	#banner1 {
+		font-size: 1.5vw;
+	}
 }
 
 /* Media Query for Tablet Viewport */
-@media (min-width: 768px) { 
+@media (min-width: 641px) { 
     
+	
     .welcome {
         top: 20%;
         left: 5%;
@@ -41,16 +51,24 @@ body, header, nav, main, footer, img, h1, h2, h3, ul, aside, figure, figcaption,
         left: 5%;
         padding: 2em;
     }
+	
+	#banner1 {
+		font-size: 1.5vw;
+	}
 
 }
 
 /* Media Query for Desktop Viewport */
-@media (min-width: 992px) { 
+@media (min-width: 1008px) { 
     
     .display-1 {
         font-size: 8em;
     }
 	
+	
+	#banner1 {
+		font-size: 1vw;
+	}
 }
 
 
@@ -71,11 +89,11 @@ body, header, nav, main, footer, img, h1, h2, h3, ul, aside, figure, figcaption,
 }
 
 .display-1 {
-  font-size: 4em;
+  font-size: 5em;
 }
 
 .display-4 {
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .main-bg {
@@ -95,6 +113,10 @@ body, header, nav, main, footer, img, h1, h2, h3, ul, aside, figure, figcaption,
 }
 
 nav .navbar-brand {
+	font-family: 'Comfortaa', cursive;
+}
+
+.navbar {
 	font-family: 'Comfortaa', cursive;
 }
 
@@ -122,14 +144,17 @@ div#auction-nudge-items table.columns td,
 div#auction-nudge-items table.columns td a {
 	color: #e4e4e4;
 }
+
 /* Add a white border between rows */
 div#auction-nudge-items table.columns td {
   border-top: 1px solid #999999;			
 }
+
 /* All rows */
 div#auction-nudge-items table.columns tr {
 	background-color: #2b2b2b;
 }
+
 /* Every other row */			
 div#auction-nudge-items table.columns tr.alt {
 	background-color: #393939;
@@ -141,6 +166,7 @@ div#auction-nudge-items table.columns tr.alt {
 div#auction-nudge-items div.an-search-box {
 	border-color: #999999;
 }
+
 /* Change the background color and text color of search button */
 div#auction-nudge-items div.an-search-submit {
 	background-color: #999999;
@@ -159,7 +185,46 @@ div#auction-nudge-items ul.an-page-wrap {
 div#auction-nudge-items ul.an-page-wrap li {
   color: #e4e4e4;
 }
+
 /* Inactive button visiblity */
 div#auction-nudge-items ul.an-page-wrap li.an-inactive  {
   display: none;
+}
+
+#carouselBlackOutBanner,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active {
+    height: 100vh;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.carousel-item:nth-child(1) {
+	background-image: url(../images/main-bg-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.carousel-item:nth-child(2) {
+	background-image: url(../images/main-bg-2.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#banner1 {
+	font-family: 'Comfortaa', cursive;
+	top: 50%;
+	transform: translateY(-50%);
+	bottom: initial;
+}
+
+.btn-xl {
+	font-family: 'Comfortaa', cursive;
+	padding: 20px 20px;
+	border-radius: 15px;
+	font-size: 1.5rem;
 }
