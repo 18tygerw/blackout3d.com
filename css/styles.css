@@ -1,5 +1,4 @@
 /*
-    By: Tyger Whitaker
     File Name: styles.css
 */
 
@@ -138,16 +137,25 @@ header .btn {
 
 /* Auction Nudge Customization */
 
-/* Text colour of headings, cells and links */
-div#auction-nudge-items table.columns th,
-div#auction-nudge-items table.columns td,			
-div#auction-nudge-items table.columns td a {
+/* Title color */
+div.auction-nudge-items .an-title a {
 	color: #e4e4e4;
 }
-
-/* Add a white border between rows */
-div#auction-nudge-items table.columns td {
-  border-top: 1px solid #999999;			
+/* The price */
+div.auction-nudge-items .an-price {
+  color: #e4e4e4;
+}
+/* Time left label */
+div.auction-nudge-items .an-ends .an-label {
+  color: #e4e4e4;
+}
+/* Time left */
+div.auction-nudge-items .an-ends .an-time {
+  color: green;
+}
+/* View item link */
+div.auction-nudge-items .an-view a {
+  color: #e4e4e4;
 }
 
 /* All rows */
@@ -158,37 +166,6 @@ div#auction-nudge-items table.columns tr {
 /* Every other row */			
 div#auction-nudge-items table.columns tr.alt {
 	background-color: #393939;
-}
-
-/* Search Box customization for Auction Nudge */
-
-/* Change the border color */
-div#auction-nudge-items div.an-search-box {
-	border-color: #999999;
-}
-
-/* Change the background color and text color of search button */
-div#auction-nudge-items div.an-search-submit {
-	background-color: #999999;
-	color: #e4e4e4;
-	border-radius: 6px;
-}	
-
-/* Pagination customization for Auction Nudge */
-
-/* Change the background color */
-div#auction-nudge-items ul.an-page-wrap {
-  background-color: #393939;
-}
-
-/* Link color */
-div#auction-nudge-items ul.an-page-wrap li {
-  color: #e4e4e4;
-}
-
-/* Inactive button visiblity */
-div#auction-nudge-items ul.an-page-wrap li.an-inactive  {
-  display: none;
 }
 
 #carouselBlackOutBanner,
@@ -220,6 +197,7 @@ div#auction-nudge-items ul.an-page-wrap li.an-inactive  {
 	top: 50%;
 	transform: translateY(-50%);
 	bottom: initial;
+	
 }
 
 .btn-xl {
@@ -227,4 +205,10 @@ div#auction-nudge-items ul.an-page-wrap li.an-inactive  {
 	padding: 20px 20px;
 	border-radius: 15px;
 	font-size: 1.5rem;
+}
+
+.btn {
+	font-family: 'Comfortaa', cursive;
+	padding: 20px 15px;
+	border-radius: 30px;
 }
