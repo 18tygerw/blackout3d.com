@@ -139,15 +139,15 @@ header .btn {
 
 /* Title color */
 div.#auction-nudge-items .an-title a {
-	color: #e4e4e4;
+	color: white;
 }
 /* The price */
 div#auction-nudge-items .an-price {
-  color: #e4e4e4;
+  color: white;
 }
 /* Time left label */
 div#auction-nudge-items .an-ends .an-label {
-  color: #e4e4e4;
+  color: white;
 }
 /* Time left */
 div#auction-nudge-items .an-ends .an-time {
@@ -155,7 +155,7 @@ div#auction-nudge-items .an-ends .an-time {
 }
 /* View item link */
 div#auction-nudge-items .an-view a {
-  color: #e4e4e4;
+  color: white;
 }
 
 #carouselBlackOutBanner,
